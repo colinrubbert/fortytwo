@@ -1,3 +1,41 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+body {
+  padding-top: 70px;
+}
+
+.navbar {
+  border-radius: 0;
+  background-image: url('/assets/escheresque_ste.png');
+}
+
+.navbar-inverse .navbar-brand {
+  font-size: 2em;
+  color: #26C281;
+  font-family: 'Lobster', 'Helvetica-Nueue', Helvetica, sans-serif;
+}
+
+.navbar-right {
+  margin-left: 15px;
+  
+}
+
+.slogan {
+  color: #fff;
+  margin-left: 15px;
+  padding-left: 5px;
+}
+
+.ft-box {
+  border: 1px solid #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ft-box-sub {
+  border: 1px solid #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
