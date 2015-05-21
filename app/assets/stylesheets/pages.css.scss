@@ -17,6 +17,10 @@ p {
   font-size: 1.25em;
 }
 
+hr {
+  border-color: #26C281;
+}
+
 ////////////////////////////////////
 //      NAVIGATION BAR            //
 ///////////////////////////////////
@@ -61,7 +65,7 @@ p {
 ////////////////////////////
 
 .ft-box {
-  border-radius: 2px;
+  border-radius: 8px 8px 2px 2px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px 20px;
