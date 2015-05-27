@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#42-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -12,16 +12,19 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="42-collapse">
       <div class="nav navbar-nav slogan">
         <h5>The answer to the ultimate question of Life, the Universe, and Everything. <br /> <i><strong>Who do I go to for IT help?</strong></i></h5>
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <%= link_to "About", about_path %>
+          <%= link_to "Services", services_path, :class => 'btn btn-42-frame' %>
         </li>
         <li>
-          <%= link_to 'Request Assistance', '#' %>
+          <%= link_to "About", about_path, :class => 'btn btn-42-frame' %>
+        </li>
+        <li>
+          <%= link_to 'Request Assistance', '#', :class => 'btn btn-42-frame' %>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
