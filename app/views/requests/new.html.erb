@@ -1,0 +1,9 @@
+<h1>Create a new request</h1>
+  <%= simple_form_for @request do |f| %>
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :phone %>
+    <%= f.input :email %>
+    <br/>
+    <%= f.submit "Submit Request", :class => 'btn btn-42' %>
+  <% end %>

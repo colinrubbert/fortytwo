@@ -4,4 +4,8 @@ class RequestsController < ApplicationController
     @requests  = Request.all
   end
 
+  def new
+    @request = Request.new
+  end
+
 end
