@@ -26,7 +26,7 @@
           <li><%= link_to 'Log In', new_user_session_path, :class => 'btn btn-42-frame' %></li>
         <% end %>
         <% if user_signed_in? %>
-          <li><%= link_to 'Request Assistance', '#', :class => 'btn btn-42-frame' %></li>
+          <li><%= link_to 'Request Assistance', new_request_path, :class => 'btn btn-42-frame' %></li>
         <% else %>
           <li><%= link_to 'Request Assistance', new_user_registration_path, :class => 'btn btn-42-frame', :data => { :confirm => "Must be signed in to make a request."} %></li>
         <% end %>
