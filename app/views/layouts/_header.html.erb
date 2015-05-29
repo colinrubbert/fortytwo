@@ -20,12 +20,16 @@
         <li>
           <%= link_to "Services", services_path, :class => 'btn btn-42-frame' %>
         </li>
-        <li>
-          <%= link_to "About", about_path, :class => 'btn btn-42-frame' %>
-        </li>
-        <li>
-          <%= link_to 'Request Assistance', '#', :class => 'btn btn-42-frame' %>
-        </li>
+        <% if user_signed_in? %>
+          <li><%= link_to 'Sign Out', destroy_user_session_path, :class => 'btn btn-42-frame', :method => :delete %></li>
+        <% else %>
+          <li><%= link_to 'Log In', new_user_session_path, :class => 'btn btn-42-frame' %></li>
+        <% end %>
+        <% if user_signed_in? %>
+          <li><%= link_to 'Request Assistance', '#', :class => 'btn btn-42-frame' %></li>
+        <% else %>
+          <li><%= link_to 'Request Assistance', new_user_registration_path, :class => 'btn btn-42-frame', :data => { :confirm => "Must be signed in to make a request."} %></li>
+        <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
