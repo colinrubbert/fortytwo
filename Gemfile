@@ -8,8 +8,12 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+# Design Template
 gem 'bootstrap-sass'
+# User Account Creation and Management
 gem 'devise'
+# Form Generation and Management
+gem 'simple_form'
 
 
 group :doc do
