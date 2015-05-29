@@ -5,4 +5,6 @@ Fortytwo::Application.routes.draw do
    get "about" => 'pages#about'
    get "services" => 'pages#services'
 
+  resources :requests
+
 end
