@@ -1,4 +1,5 @@
 class RequestsController < ApplicationController
+  before_action :authenticate_user!, :only => [:new, :create, :index]
 
   def index
     @requests  = Request.all
@@ -9,7 +10,7 @@ class RequestsController < ApplicationController
   end
 
   def create
-    Request.create(request_params)
+    current_user.requests.create(request_params)
     redirect_to root_path
   end
 
