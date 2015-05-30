@@ -10,8 +10,13 @@ class RequestsController < ApplicationController
   end
 
   def create
-    current_user.requests.create(request_params)
-    redirect_to root_path
+    @request = current_user.requests.create(request_params)
+    if @request.valid?
+      redirect_to root_path
+    else
+      flash.now[:alert] = "Submission didn't pass validation. Please resubmit request."
+      render :new, :status => :unprocessable_entity
+    end
   end
 
   private
