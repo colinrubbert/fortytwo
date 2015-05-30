@@ -10,14 +10,18 @@
         <h1>Create a new request</h1>
 
         <%= simple_form_for @request do |f| %>
-
+          <div class="col-xs-12 left">
+            <%= f.input :name %>
+          </div>
+          <div class="clear"></div>
+          <br />
           <div class="col-xs-12 left">
             <%= f.input :description %>
           </div>
           <div class="clear"></div>
           <br />
           <div class="col-xs-12 col-md-6 pull-left left">
-            <%= f.input :phone %>
+            <%= f.input :phone, :placeholder => '555-555-5555' %>
           </div>
           <div class="col-xs-12 col-md-6 pull-right left">
             <%= f.input :email %>
@@ -38,15 +42,21 @@
   <h1>Create a new request</h1>
 
   <%= simple_form_for @request do |f| %>
-
+    <div class="col-xs-12 left">
+      <%= f.input :name %>
+    </div>
+    <div class="clear"></div>
+    <br />
     <div class="col-xs-12 left">
       <%= f.input :description %>
     </div>
     <div class="clear"></div>
     <br />
     <div class="col-xs-12 col-md-6 pull-left left">
-      <%= f.input :phone %>
+      <%= f.input :phone, :placeholder => '555-555-5555' %>
     </div>
+    <div class="clear"></div>
+    <br/>
     <div class="col-xs-12 col-md-6 pull-right left">
       <%= f.input :email %>
     </div>

@@ -99,8 +99,8 @@ hr {
 
 .ft-box {
   border-radius: 8px 8px 2px 2px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 55px;
+  margin-bottom: 30px;
   padding: 10px 20px;
   text-align: center;
   background-color: rgba(0, 0, 0, .75);
@@ -153,12 +153,24 @@ hr {
   }
 }
 
+blockquote {
+  border-radius: 8px 2px 2px 2px;
+  background: rgba(255, 255, 255, .05);
+  border-left: 10px solid #03C9A9;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  text-align: left;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+
 ///////////////////////////////
 //    MODAL CUSTOMIZATION   //
 //////////////////////////////
 
 .modal-42 {
   margin-top: 90px;
+  margin-bottom: 50px;
 }
 
 .btn-42-modal {
@@ -171,7 +183,7 @@ hr {
 }
 
 .modal.in {
-  padding-top: 70px;
+  padding-top: 90px;
 }
 
 .modal-content {
