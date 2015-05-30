@@ -1,7 +1,9 @@
 <!-- Large modal -->
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".request-modal">Request Assistance</button> -->
-
-<div class="modal fade request-modal in test" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="false">
+<div class="clear"></div>
+<div class="col-xs-10 col-xs-offset-1 modal-42 hidden-xs">
+  <button type="button" class="btn btn-42 btn-42-modal" data-toggle="modal" data-target=".request-modal">Request Assistance</button>
+</div>
+<div class="modal fade request-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="ft-box col-xs-10 col-xs-offset-1">
@@ -30,4 +32,28 @@
     </div>
   </div>
 </div>
-<div class="modal-backdrop fade in"></div>
+
+
+<div class="ft-box col-xs-10 col-xs-offset-1 hidden-sm hidden-md hidden-lg">
+  <h1>Create a new request</h1>
+
+  <%= simple_form_for @request do |f| %>
+
+    <div class="col-xs-12 left">
+      <%= f.input :description %>
+    </div>
+    <div class="clear"></div>
+    <br />
+    <div class="col-xs-12 col-md-6 pull-left left">
+      <%= f.input :phone %>
+    </div>
+    <div class="col-xs-12 col-md-6 pull-right left">
+      <%= f.input :email %>
+    </div>
+    <div class="clear"></div>
+    <br/>
+    <%= f.submit "Submit Request", :class => 'btn btn-42' %>
+  <% end %>
+
+  <br />
+</div>

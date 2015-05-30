@@ -75,21 +75,14 @@ hr {
   padding-left: 5px;
 }
 
-.modal.in {
-  padding-top: 70px;
-  display: block;
-}
 
-.modal-content {
-  border: none;
-}
 
 // This is just for testing purposes //
-@media only screen and (max-width: 768px ) {
-  .modal.in {
-    max-height: 300px;
-  }
-}
+//@media only screen and (max-width: 768px ) {
+//  .modal.in {
+//    max-height: 300px;
+//  }
+//}
 
 ////////////////////////////
 //    BODY STYLING        //
@@ -135,7 +128,7 @@ hr {
 
 .btn-42 {
   background: #26C281;
-  width: 120px;
+  //width: 120px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -158,4 +151,29 @@ hr {
   .navbar-right li a:hover {
     border-bottom: 3px solid #26C281;
   }
+}
+
+///////////////////////////////
+//    MODAL CUSTOMIZATION   //
+//////////////////////////////
+
+.modal-42 {
+  margin-top: 90px;
+}
+
+.btn-42-modal {
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 250px;
+  font-size: 50px;
+  background: rgba(38, 194, 129, .45);
+  display: block;
+}
+
+.modal.in {
+  padding-top: 70px;
+}
+
+.modal-content {
+  border: none;
 }

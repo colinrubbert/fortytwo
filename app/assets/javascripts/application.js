@@ -22,9 +22,3 @@ $(document).ready(function() {
     trigger: 'hover'
   });
 });
-
-$(function() {
-    if (window.location.hash.indexOf("myHash") !== -1) {
-        $("#request_modal").modal('show');
-    }
-});
