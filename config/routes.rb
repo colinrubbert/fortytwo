@@ -1,5 +1,6 @@
 Fortytwo::Application.routes.draw do
 
+  devise_for :admins
   devise_for :users
    root 'pages#index'
    get "about" => 'pages#about'
