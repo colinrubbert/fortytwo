@@ -12,7 +12,7 @@ class RequestsController < ApplicationController
   def create
     @request = current_user.requests.create(request_params)
     if @request.valid?
-      redirect_to root_path
+      redirect_to root_path, :notice => "Thank you for submitting a request. We will get back to you as soon as possible."
     else
       flash.now[:alert] = "Submission didn't pass validation. Please resubmit request."
       render :new, :status => :unprocessable_entity
